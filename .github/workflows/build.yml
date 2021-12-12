@@ -30,3 +30,4 @@ jobs:
           bucket: lzc-weather-report
           endpoint: https://oss-cn-beijing.aliyuncs.com
           folder: ./build
+          
