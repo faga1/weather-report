@@ -23,12 +23,10 @@ jobs:
           yarn install
           yarn build
       - name: upload files to OSS
-        id: upload_to_oss
-        uses: royalrover/workbench-oss@master
+        uses: fangbinwei/aliyun-oss-website-action@v1
         with:
-          ACCESS_KEY: ${{ secrets.ACCESS_KEY_ID }}
-          ACCESS_SECRET: ${{ secrets.ACCESS_KEY_SECRET }}
-          OSS_BUCKET: lzc-weather-report
-          OSS_REGION: oss-cn-beijing
-          UPLOAD_PATH: ./build
-          OSS_PATH: ./
+          accessKeyId: ${{ secrets.ACCESS_KEY_ID }}
+          accessKeySecret: ${{ secrets.ACCESS_KEY_SECRET }}
+          bucket: lzc-weather-report
+          endpoint: https://oss-cn-beijing.aliyuncs.com
+          folder: ./build
