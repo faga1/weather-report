@@ -22,4 +22,13 @@ jobs:
           npm install -g yarn
           yarn install
           yarn build
-          yarn deploy
+      - name: upload files to OSS
+        id: upload_to_oss
+        uses: royalrover/workbench-oss@master
+        with:
+          ACCESS_KEY: ${{ secrets.ACCESS_KEY_ID }}
+          ACCESS_SECRET: ${{ secrets.ACCESS_KEY_SECRET }}
+          OSS_BUCKET: perfect-pusher
+          OSS_REGION: oss-cn-beijing
+          UPLOAD_PATH: ./build
+          OSS_PATH: /
