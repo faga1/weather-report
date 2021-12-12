@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: get ak
-        run: echo ${{ secrets.ACCESS_KEY_ID}}
+        run: echo '${{ secrets.ACCESS_KEY_ID}}'
       - name: checkout
         uses: actions/checkout@v1
 
