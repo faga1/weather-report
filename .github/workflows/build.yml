@@ -28,7 +28,7 @@ jobs:
         with:
           ACCESS_KEY: ${{ secrets.ACCESS_KEY_ID }}
           ACCESS_SECRET: ${{ secrets.ACCESS_KEY_SECRET }}
-          OSS_BUCKET: perfect-pusher
+          OSS_BUCKET: lzc-weather-report
           OSS_REGION: oss-cn-beijing
           UPLOAD_PATH: ./build
           OSS_PATH: /
