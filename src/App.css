@@ -3,7 +3,7 @@
     flex-direction: row;
     width: 90vw;
     margin:60px auto;
-    background-color: rgb(52,144,194);
+    background: linear-gradient(0deg,rgb(62,160,215),rgb(21,97,140));
     border-radius: 1vw;
 }
 .weather-item{
@@ -13,6 +13,10 @@
     height: 20vw;
     text-align: center;
     position:relative;
+}
+.weather-item:hover{
+    cursor: pointer;
+    background: linear-gradient(0deg, rgb(33,128,182),rgb(17,73,107));
 }
 img{
     margin-top: 2vw;
