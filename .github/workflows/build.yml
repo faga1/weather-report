@@ -31,3 +31,4 @@ jobs:
           OSS_BUCKET: lzc-weather-report
           OSS_REGION: oss-cn-beijing
           UPLOAD_PATH: ./build
+          OSS_PATH: ./
