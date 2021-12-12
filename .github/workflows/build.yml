@@ -28,5 +28,5 @@ jobs:
           accessKeyId: ${{ secrets.ACCESS_KEY_ID }}
           accessKeySecret: ${{ secrets.ACCESS_KEY_SECRET }}
           bucket: lzc-weather-report
-          endpoint: https://oss-cn-hangzhou.aliyuncs.com
+          endpoint: https://oss-cn-beijing.aliyuncs.com
           folder: ./build
