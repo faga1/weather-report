@@ -71,7 +71,7 @@ export default class App extends React.Component {
       <div>
         <Upload {...props}>
           <Button>
-          点击上传csv
+          刷新天气
           </Button>
         </Upload>
         <div className='container' style={{display:this.state.csvParseData.length?'block':'none'}}>
